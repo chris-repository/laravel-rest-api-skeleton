@@ -1,0 +1,40 @@
+{
+  "name": "fauda/laravel-rest-api-skeleton",
+  "description": "A RESTful api skeleton using laravel and doctrine 2",
+  "type": "project",
+  "require": {
+    "php": ">=7.0.0",
+    "laravel/framework": "5.2.*",
+    "laravel-doctrine/orm": "1.1.*",
+    "league/fractal": "^0.13.0",
+    "guzzlehttp/guzzle": "^6.1",
+    "asm89/stack-cors": "dev-master as 0.2.2",
+    "barryvdh/laravel-cors": "^0.7.3",
+    "symfony/property-access": "^3.0",
+    "vinkla/hashids": "^2.2",
+    "laravel-doctrine/migrations": "1.0.*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+    "fzaninotto/faker": "~1.4",
+    "phpunit/phpunit": "~4.0",
+    "symfony/css-selector": "2.8.*|3.0.*",
+    "symfony/dom-crawler": "2.8.*|3.0.*",
+    "mockery/mockery": "dev-master"
+  },
+  "autoload": {
+    "classmap": [
+      "database"
+    ],
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\Features\\Bootstrap\\": "tests/features/bootstrap/",
+      "Tests\\Features\\Applications\\": "tests/features/applications/"
+    }
+  }
+}

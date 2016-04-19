@@ -1,0 +1,15 @@
+api:
+  image: fauda/php7-apache
+  ports:
+    - "8000:80"
+  volumes:
+    - .:/var/www/html
+  links:
+    - mysql
+mysql:
+  image: mysql:5.7
+  ports:
+    - "3000:3306"
+  environment:
+    MYSQL_ROOT_PASSWORD: password
+    MYSQL_DATABASE: data
